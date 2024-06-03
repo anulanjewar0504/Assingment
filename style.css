@@ -1,0 +1,460 @@
+*{
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section1{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 0 10% 0 10%;
+    height:534px ;
+
+}
+.heading{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10%;
+}
+#cap{
+    color: rgb(255, 0, 85);
+    text-transform:uppercase;
+}
+.heading > big > h1{
+    text-transform:uppercase;
+}
+#info{
+    font-size: 11.5px;
+    color: rgb(152, 152, 152);
+}
+.button{
+    margin-top: 5%;
+    background-color: rgb(255, 0, 85);
+    width: 75px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.button>a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11.2px;
+}
+.img>img{
+    height: 400px;
+    width: 400px;
+}
+
+.section2{
+    height:534px ;
+    background-color:rgb(244, 244, 244);
+    padding: 0 0 0 18% ;
+}
+.section2 > .sec1{
+    padding-top: 5%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    
+}
+.sub{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap:2px;
+    padding-right: 5%;
+}
+.sub > p{
+    width: 45%;
+    padding-right: 10%;
+}
+.sub > big > h1{
+    width: 70%;
+    text-transform: uppercase;
+}
+
+.slider_container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    width: 68%;
+    height: 50%;
+    gap: 25px;
+    overflow-y: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    
+}
+.slider_container::-webkit-scrollbar {
+    display: none;
+}
+.container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.hidden{
+    height: 100%;
+    width: 100%;
+    padding: 10%;
+    background-color: rgb(255, 0, 85);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+.hidden>#head{
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.hidden>p{
+    text-align: center;
+    font-size: 10px;
+    color: white;
+}
+.hidden>.button{
+    background-color:white;
+    width: 95px;
+    height: 25px;
+    border-radius: 2px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.hidden>.button>a{
+    color:  rgb(255, 0, 85);
+}
+.hidden>.button>a>span{
+    font-size: 15px;
+}
+.hidden:hover{
+    opacity: 1;
+}
+.container>#img1{
+    background-image: url(./Img/1.jpg);
+    background-size: cover;
+    height: 250px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.container>#img2{
+    background-image: url(./Img/2.jpg);
+    background-size: cover;
+    height: 250px;
+    width: 150px;
+    cursor: pointer;
+}
+.container>#img3{
+    background-image: url(./Img/3.jpg);
+    background-size: cover;
+    height: 250px;
+    width: 150px;
+    cursor: pointer;
+}
+.container>#img4{
+    background-image: url(./Img/4.jpg);
+    background-size: cover;
+    height: 250px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.section3{
+    height:374px;
+    margin-top: 2%;
+    padding: 0;
+}
+
+.section3 > .heading1{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heading1 > big > h1{
+    text-transform:uppercase;
+}
+
+.sec2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+.info_box{
+    padding: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 230px;
+    height: 230px;
+}
+.info_box > img{
+    height: 45px;
+}
+.info_box > h2{
+    font-size: 17px;
+}
+.info_box > p{
+    font-size: 12px ;
+}
+
+.section4{
+    margin-top: 2%;
+    padding: 0;
+}
+
+.section4 > .heading1{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heading1 > big > h1{
+    text-transform:uppercase;
+}
+
+.sec3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.sec3 > .img{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.tab {
+    float: left;
+    background-color: #f1f1f1;
+    width: 30%;
+}
+  
+  /* Style the buttons that are used to open the tab content */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.tabcontent {
+    padding: 0px 12px;
+    height: 400px;
+    width: 400px;
+}
+.tabcontent > img{
+    width:100%;
+    height: 100%;
+}
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+
+} 
+  /* Create an active/current "tab button" class */
+  .tab button.active {
+    background-color:  rgb(255, 0, 85);
+    color: white;
+
+}
+.section5{
+    margin-top: 5%;
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgb(244, 244, 244);
+}
+.section5 > .heading1{
+    text-align: center;
+}
+.boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 5%;
+}
+.boxes>.box{
+    background-color: white;
+    width: 170px;
+    height: 140px;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    transition: ease-in-out 0.5s;
+}
+.box:hover{
+background: #e0e0e0;
+box-shadow:  20px 20px 40px #a1a1a1,
+             -20px -20px 40px #ffffff;
+}
+.box>img{
+    width: 25px;
+}
+.box>p>span{
+    color: black;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.box>p{
+    color: rgb(138, 138, 138);
+    font-size: 10px;
+}
+
+.section6{
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section6 > .heading1{
+    text-align: center;
+}
+.section6>.review{
+    width: 40%;
+    color: rgb(138, 138, 138);
+    font-size: 13px;
+    text-align: left;
+}
+.review>p>#red{
+    color:  rgb(255, 0, 85);
+    font-size: 13px;
+    font-weight: 1000;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    background-color:  rgb(255, 0, 85);
+    width: 100%;
+    height:200px;
+}
+
+.form{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2%;
+    width: 40%;
+    height: 20%;
+    background-color: white
+}
+
+.form > form{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 15px;
+}
+.form > .name{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+form>.condition{
+    display: flex;
+    text-align: left;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+form>.condition>#check{
+    accent-color: rgb(255, 0, 85) ;
+    cursor: pointer;
+}
+form > .but{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.but>button{
+    width: 80%;
+    height: 32px;
+    background-color: rgb(255, 0, 85);
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+.form{
+    width: 35%;
+    padding: 50px 30px 50px 30px;
+    margin: 50px auto;   
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+  }
+
+  input{
+    border: none;
+    border-bottom: #999 1px solid;
+  }
+form>email>input{
+    width: 100%;
+}
+  form>.name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .form.show { /* Style form when visible */
+    display: block;
+  }
+  .close-form {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  
+
